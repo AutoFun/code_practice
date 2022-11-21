@@ -1,0 +1,130 @@
+/**
+css 练习
+css : external, internal, inline
+
+external: <link> .css file
+internal: <style> tag between <body> 
+inline: use the style attribute
+
+**/
+
+/*flexbox*/
+
+@charset "utf-8";
+@import "variable";
+ 
+
+.container {
+    display: flex;
+}
+
+.item {
+    order: 5;
+}
+
+.container {
+    flex-direction: row | row-reverse | column | column-reverse;
+}
+
+.item {
+    flex-grow: 4;
+}
+
+.container {
+    flex-flow: column wrap;
+}
+
+.item {
+    flex-basis: | auto;
+}
+
+.container {
+    justify-content: flex-start;
+}
+
+.item {
+    align-self: auto | flex-start;
+}
+
+/*
+root 来定义颜色
+*/
+
+:root {
+    --blue: #007bff;
+    --purple: #6f42c1;
+    --primary: #007bff;
+
+}
+
+/*
+root define font size: normal, huge
+*/
+
+:root {
+    --wp--preset--font-size--normal: 16px;
+    --wp--preset--font-size-huge: 42 px;
+}
+
+/*pseudo::before ::after*/
+
+*,::after,::before {
+    box-sizing: border-box;
+}
+
+html,body,div {
+    margin: 0;
+    padding:0;
+}
+
+.table-box {
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 14px;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    overflow:auto;
+    margin-bottom:14px;
+    -webkit-overflow-scrolling:touch;
+}
+
+table {
+    margin: 30px 0;
+    width: 700px;
+    thead{
+        tr{
+            border-bottom: 2px solid $content-text;
+        }
+    }
+    tbody{
+        tr{
+            border-bottom: 1px solid $content-text;
+            &:last-child: none;
+        }    
+    }
+}
+th{
+    text-align:center;
+}
+tr{
+    td{
+        text-align: center;
+        padding: 8px 0;
+        font-size:20px;
+        line-height:30 px;
+        color: $content-text;
+       
+    }
+}
+
+cite{
+    font-style:normal;
+    font-size: 15px;
+    line-height:28px;
+}
+
+
+
