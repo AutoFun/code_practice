@@ -108,6 +108,8 @@ export const sortList =function(head){
     return mergeTwoLists(left,right)
 }
 
+// git pull pracitce
+
 
 
 
