@@ -24,8 +24,8 @@ Person.prototype.nationality="English"
 //console.log(Person.prototype.nationality);
 
 //add new method into a constructor
-Person.prototype.name=functoin( ) {
-    return this.firtsName+""+this.LastName;
+Person.prototype.name=function() {
+    return this.firtsName+""+this.LastName
 };
 
 
