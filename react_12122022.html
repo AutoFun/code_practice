@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        After State Management
+    </title>
+</head>
+
+<body>
+    <select id="auth-status">
+        <option value="Selected">Choose your status</option>
+        <option value="auth">Signed In!</option>
+        <option value="unauth">Guest</option>
+    </select>
+
+    <div id="root"></div>
+    <script>
+        class App {
+            constructor(){
+                this.state={
+                    isAuth:false,
+                    error:''
+                };
+                this.$authStatus=document.getElementById('auth-status');
+                this.$authStatus.addEventListener('change',event=>{
+                    this.checkAuth(event.target.value);
+                    this.render();
+                });
+            }
+
+            checkAuth(status){
+                if(status==='auth'){
+                    this.state={
+                        ...this.state,
+                        error:'',
+                        isAuth:true
+                    };
+                } else if(status==='unauth'){
+                    this.state={
+                        ...this.state, // App.state   ... 以上面结尾
+                        isAuth:false,
+                        error:"You must sign in!"
+                    };
+                }
+            }
+
+            render(){
+                const {isAuth,error}=this.state;
+
+                document.getElementById("root").innerHTML=`
+                <div style="color:${error&& "red"}">
+                    ${isAuth? "Welcome back!":error}
+                    </div>
+                `;
+            }
+        }
+        new App();
+    </script>
+</body>
+
+</html>
+
+
+
+<!---
+react.js state management demo
+
+-->
