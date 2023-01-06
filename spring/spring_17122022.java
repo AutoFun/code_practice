@@ -1,3 +1,4 @@
+package spring;
 import java.util.Objects;
 
 import javax.annotation.Generated;
