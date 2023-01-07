@@ -3,10 +3,15 @@
 ## HTML
 
 ## CSS
-
+### selectors
+### flexbox
 ## JS
-
+### JS algorithms&data structure
 ## Node.js
+### Express
+### Koa.js
+### server side with FE
+### server side with BE
 
 ## React.js
 
