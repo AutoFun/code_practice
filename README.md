@@ -9,6 +9,8 @@
 ### JS algorithms&data structure
 ## Node.js
 ### Express
+### Mongoose
+###JWT practice: Authentication problem
 ### Koa.js
 ### server side with FE
 ### server side with BE
