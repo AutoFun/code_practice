@@ -12,7 +12,7 @@
 ## Node.js
 ### Express
 ### Mongoose
-### JWT practice: Authentication problem
+### JWT practice: Authentication problem,   auth validation seed
 ### Koa.js
 ### server side with FE
 ### server side with BE
