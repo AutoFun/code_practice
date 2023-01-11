@@ -21,6 +21,11 @@
 
 ## Java
 ### JDBC
+### Java OOP
+### Java SQL 
+### Java overloading 
+### Java Inheritance
+### Java Hash
 
 ## Spring
 
