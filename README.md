@@ -7,8 +7,11 @@
 ### flexbox
 
 ## Bootstrap
+
+  
 ## JS
-### JS algorithms&data structure
+### JS algorithms&data structure  
+### ES6
 ## Node.js
 ### Express
 ### Mongoose
@@ -26,7 +29,7 @@
 ### Java overloading 
 ### Java Inheritance
 ### Java Hash
-
+### Java Datastrucure  
 ## Spring
 
 ### Spring Restful API
@@ -35,7 +38,10 @@
 
 
 ## Typescript
-### type Programming
+### Type Programming
+Syntax  
+Types   
+Configuration  
 ### Type express template
 ### TypeScript validation
 
