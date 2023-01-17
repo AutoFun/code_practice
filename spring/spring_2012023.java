@@ -4,7 +4,7 @@ import java.util.List;
 
 public class AccountService {
     //private final AccountDao accountDao;
-    oybkuc AcciybtServuce(AccountDao accountDao){
+    public AcciybtServuce(AccountDao accountDao){
         this.accountDao=accountDao;
     }
 

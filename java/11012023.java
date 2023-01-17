@@ -1,5 +1,3 @@
-import java.lang.reflect.Modifier;
-import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -30,33 +28,6 @@ public class Main {
         } else {
             System.out.println("Not found");
         }
-    }
-
-    public void hash() {
-        HashMap<String, String> capitalCities= new HashMap<String,String>();
-
-        capitalCities.put("England", "London");
-        capitalCities.put("Germany", "Berlin");
-        capitalCities.put("China", "Beijing");
-
-        System.out.println(capitalCities);
-        capitalCities.get("England");
-
-        capitalCities.clear();
-
-        for (String i: capitalCities.keySet()) {
-            System.out.println(i);
-            System.out.println("key"+i+"value:"+capitalCities.get(i)); // Print keys and values
-        }
-    }
-
-    public static void modifier () {
-        final int x= 1000;
-
-    }
-
-    public static void threads(){
-        
     }
 }
 

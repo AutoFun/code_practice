@@ -33,11 +33,18 @@ for(let i=0;i<numbers.length;i++){
     console.log(numbers[i]);
 }
 
+for(let i=0;i<numbers.length;i++){
+    console.log(numbers[i]);
+}
+
 //Use the forEach() method to iterate over the array
 numbers.forEach(function(number){
     console.log(number);
 })
 
+numbers.forEach((number)=>{
+    console.log(number);
+})
 
 // Add an element to the end of the array
 numbers.push(6);
