@@ -23,7 +23,7 @@
 ## React.js
 
 ## Java
-### JDBC
+### Java Basic
 ### Java OOP
 ### Java design pattern
 ### Java overloading 
@@ -31,6 +31,7 @@
 ### Java Hash
 ### Java Datastrucure & Algorithms  
 ### Java Thread
+### JDBC
 
 ## Spring
 
