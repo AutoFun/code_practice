@@ -25,17 +25,19 @@
 ## Java
 ### JDBC
 ### Java OOP
-### Java SQL 
+### Java design pattern
 ### Java overloading 
 ### Java Inheritance
 ### Java Hash
-### Java Datastrucure  
+### Java Datastrucure & Algorithms  
+### Java Thread
+
 ## Spring
 
 ### Spring Restful API
-
+### Spring Boot
 ### Spring Application
-
+### Spring cloud
 
 ## Typescript
 ### Type Programming
