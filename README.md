@@ -31,7 +31,7 @@
 ### Java Hash
 ### Java Datastrucure & Algorithms  
 ### Java Thread
-### JDBC
+### Java JDBC
 
 ## Spring
 
