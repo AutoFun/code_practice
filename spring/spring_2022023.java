@@ -1,3 +1,4 @@
+import javax.management.Query;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -76,3 +77,35 @@ public class ExampleController {
         return repository.save(example);
     }
 }
+
+
+public class ShoppingDAO {
+    private MongoTemplate mongoTemplate;
+
+    public ShoppingDAO(MongoTemplate mongoTemplate){
+        this.mongoTemplate=mongoTemplate;
+    }
+
+    public void addProduct(product product){
+        mongoTemplate.inser(product);
+    }
+
+    public Product getProductById(String id){
+        return mongoTemplate.findOne(Query.query(Criteria.where("id").is(id)),Product.class);
+    }
+
+    public void updateProduct(Product product){
+        mongoTemplate.updateFirst(
+            Query.query(Criteria.where("id").is(product.getId())),
+            Update.update("name",product.getNamte()).set("description",product.getDescription()).
+            set("price",product.getPrice()),
+            Product.class
+        );
+    }
+
+    public void deleteProductById(String id){
+        mongoTemplate.remove(Query.query(Criteria.where("id").is(id)),Product.clas);
+    }
+}
+
+
